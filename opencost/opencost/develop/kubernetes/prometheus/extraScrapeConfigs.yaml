@@ -1,8 +1,9 @@
-- job_name: opencost
-  scrape_interval: 1m
-  scrape_timeout: 10s
-  scheme: http
-  metrics_path: /metrics
-  static_configs:
-  - targets:
-    - localhost:9003
+extraScrapeConfigs: |
+  - job_name: opencost
+    scrape_interval: 1m
+    scrape_timeout: 10s
+    scheme: http
+    metrics_path: /metrics
+    static_configs:
+    - targets:
+       - localhost:9003
