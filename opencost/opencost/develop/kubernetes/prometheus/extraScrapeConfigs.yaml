@@ -1,5 +1,5 @@
 extraScrapeConfigs: |
-  - job_name: opencost
+  - job_name: opencostt
     scrape_interval: 1m
     scrape_timeout: 10s
     scheme: http
