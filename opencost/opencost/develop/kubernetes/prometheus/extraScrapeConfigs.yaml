@@ -1,8 +1,8 @@
-scrape_configs:
 - job_name: opencost
   scrape_interval: 1m
   scrape_timeout: 10s
   scheme: http
   metrics_path: /metrics
   static_configs:
-     - targets: ['opencost.opencost-exporter:9003']
+  - targets:
+    - localhost:9003
